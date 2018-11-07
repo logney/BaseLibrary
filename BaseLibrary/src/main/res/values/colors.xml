@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/shape8</color>
+    <color name="colorPrimaryDark">@color/shape8</color>
+    <color name="colorAccent">@color/shape8</color>
+
+    <color name="ps0">#707070</color>
+    <color name="ps1">#7c8489</color>
+    <color name="ps2">#9BA1A5</color>
+    <color name="ps3">#4fb3A4</color>
+    <color name="ps4">#FF7073</color>
+    <color name="ps5">#F4B977</color>
+    <color name="ps6">#65BDB0</color>
+    <color name="ps7">#C3C7C9</color>
+    <color name="ps8">#27D0A7</color>
+    <color name="ps9">#FD8B8D</color>
+    <color name="ps10">#6FDEBA</color>
+
+    <color name="_2095D">#2194D3</color>
+    <color name="_992095D3">#DD2095D3</color>
+
+    <color name="_3CA6D5">#11B6F4</color>
+
+    <integer-array name="mycolors">
+        <item>@color/labe1</item>
+        <item>@color/labe2</item>
+        <item>@color/labe3</item>
+        <item>@color/labe4</item>
+        <item>@color/labe5</item>
+        <item>@color/labe6</item>
+        <item>@color/labe7</item>
+    </integer-array>
+
+
+    <color name="shape4">#fd3131</color>
+    <color name="shape8">#f9634F</color>
+    <color name="shape5">#fd6353</color>
+    <color name="shape6">#fd7474</color>
+    <color name="shape7">#f52828</color>
+
+    <color name="labe1">#1C95D5</color>
+    <color name="labe2">#CA187A</color>
+    <color name="labe3">#029589</color>
+    <color name="labe4">#1EBDB6</color>
+    <color name="labe5">#21C659</color>
+    <color name="labe6">#8923CB</color>
+    <color name="labe7">#FDB934</color>
+    <color name="black">#000000</color>
+
+    <color name="_00000000">#00000000</color>
+    <color name="_AAAAAA">#AAAAAA</color>
+    <color name="_888888">#888888</color>
+    <color name="_777777">#777777</color>
+    <color name="_555555">#555555</color>
+    <color name="_33000000">#33000000</color>
+    <color name="_11000000">#11000000</color>
+    <color name="_222222">#222222</color>
+    <color name="_111111">#111111</color>
+    <color name="_000000">#000000</color>
+    <color name="_FFFFFF">#FFFFFF</color>
+    <color name="_EEEEEE">#EEEEEE</color>
+    <color name="_88FFFFFF">#88FFFFFF</color>
+    <color name="_999999">#999999</color>
+    <color name="_FD9696">#FD9696</color>
+    <color name="_EFEFEF">#EFEFEF</color>
+    <color name="_F8F8F8">#F8F8F8</color>
+    <color name="_FCFCFC">#FFFCFC</color>
+    <color name="_F4F4F4">#F4F4F4</color>
+    <color name="_333333">#333333</color>
+
+    <color name="btn0">#aaaaaa</color>
+    <color name="btn1">#69B056</color>
+    <color name="btn2">#FFD52B</color>
+    <color name="btn3">#CE413A</color>
+    <color name="btn4">#3F7FE4</color>
+    <color name="btn5">#A4C2F6</color>
+    <color name="btn6">#F78AE0</color>
+    <color name="btn7">#6638F0</color>
+    <color name="btn7a">#aa6638F0</color>
+    <color name="btn8">#5CD0FA</color>
+    <color name="btn9">#D93C33</color>
+    <color name="btn10">#D05C3C</color>
+    <color name="btn11">#985F9C</color>
+    <color name="btn12">#F6C150</color>
+    <color name="btn13">#4681F4</color>
+    <color name="btn14">#5EA379</color>
+    <color name="btn15">#5d8df7</color>
+    <color name="btn16">#fe9900</color>
+    <color name="btn17">#AAfe9900</color>
+    <color name="btn18">#08fe9900</color>
+    <color name="btn19">#81c784</color>
+    <color name="btn20">#999999</color>
+    <color name="btn21">#46c01b</color>
+    <color name="btn22">#1E2327</color>
+    <color name="btn23">#FF5A00</color>
+    <color name="btn24">#995CC2F8</color>
+    <color name="_757575">#757575</color>
+
+    <color name="title_color">#2C3444</color>
+    <color name="title_sub_color">#4F5760</color>
+    <color name="text_color">#848D98</color>
+    <color name="text_sub_color">#C1C6CB</color>
+    <color name="cut_line_color">#E9E9E9</color>
+    <color name="element_color">#F7F8F9</color>
+    <color name="element_color1">#F4F4F4</color>
+    <color name="blue_shar">#DD007DE3</color>
+
+    <color name="zy_color">#EA4531</color>
+    <color name="cj_color">#F8A900</color>
+    <color name="cg_color">#37C380</color>
+    <color name="_222BB8FF">#222BB8FF</color>
+</resources>

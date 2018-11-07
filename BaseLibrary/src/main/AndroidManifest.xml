@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pengyu.base">
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <application>
+        <activity
+            android:name="com.pengyu.base.ui.activity.AgentActivity"
+            android:label="@string/title_activity_agent"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
