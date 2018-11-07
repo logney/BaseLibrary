@@ -15,9 +15,10 @@ App常用框架封装
   </code>
 </pre>
 在app module 的 build.gardle 中添加
+
 <pre>
   <code>
-   <font color="#951FF4">dependencies</font> {
+    dependencies {
     
       implementation 'com.pengyu:BaseLibrary:0.0.2'
       
