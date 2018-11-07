@@ -1,6 +1,6 @@
 # BaseLibrary
-
-App常用框架封装 以后会做详细讲解
+<a target="_blank" href=""><imgsrc="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg"></a>
+App常用框架封装
 
 # 使用
 在project root 的 build.gradle 中添加
