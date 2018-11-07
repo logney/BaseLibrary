@@ -14,9 +14,13 @@ App常用框架封装
     maven {url 'https://dl.bintray.com/haiol/maven'}
   </code>
 </pre>
-在app module 的build.gardle 中添加
+在app module 的 build.gardle 中添加
 <pre>
   <code>
-    implementation 'com.pengyu:BaseLibrary:0.0.2'
+    <span class = "pl-en">dependencies</span> {
+    
+      implementation 'com.pengyu:BaseLibrary:0.0.2'
+      
+    }
   </code>
 </pre>
