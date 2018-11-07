@@ -1,6 +1,8 @@
 # BaseLibrary
 
-![AppVeyor]https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)
+![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg?style=plastic)
+
+
 App常用框架封装
 
 # 使用
