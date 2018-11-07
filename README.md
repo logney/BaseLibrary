@@ -7,6 +7,7 @@ App常用框架封装
 
 # 使用 
 ![AppVeyor](https://img.shields.io/badge/release-0.0.2-blue.svg?style=plastic)
+
 在project root 的 build.gradle 中添加
 <pre>
   <code>
@@ -18,4 +19,4 @@ App常用框架封装
   <code>
     implementation 'com.pengyu:BaseLibrary:0.0.2'
   </code>
-<pre>
+</pre>
