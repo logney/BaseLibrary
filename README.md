@@ -7,10 +7,14 @@ App常用框架封装
 
 # 使用
 在project root 的 build.gradle 中添加
+<code>
 maven {url 'https://dl.bintray.com/haiol/maven'}
+</code>
 
 在app module 的build.gardle 中添加
+<code>
 implementation 'com.pengyu:BaseLibrary:0.0.2'
+</code>
                 
 
 
