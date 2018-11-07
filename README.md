@@ -1,4 +1,5 @@
-# BaseLibrary <a target="_blank" href=""><imgsrc="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg"></a>
+# BaseLibrary
+
 App常用框架封装 以后会做详细讲解
 
 # 使用
