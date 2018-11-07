@@ -17,7 +17,7 @@ App常用框架封装
 在app module 的 build.gardle 中添加
 <pre>
   <code>
-    <span class = "pl-en">dependencies</span> {
+   <font color="#951FF4">dependencies</font> {
     
       implementation 'com.pengyu:BaseLibrary:0.0.2'
       
