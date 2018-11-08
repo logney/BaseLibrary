@@ -8,7 +8,7 @@ import android.content.Context
 
 object Toasty {
     fun init(context: Context?) {
-        ToastUtils.init(context)
+        ToastUtils.init(context!!)
     }
 
     fun showToast(mesage: String?) {

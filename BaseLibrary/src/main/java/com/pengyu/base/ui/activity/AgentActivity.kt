@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.web_toolbar.*
 
 class AgentActivity : BaseAgentWebActivity() {
 
+
     private var urls: String? = null
     private var mBackImageView: ImageView? = null
     private var mTitleTextView: TextView? = null
@@ -34,9 +35,6 @@ class AgentActivity : BaseAgentWebActivity() {
         super.onCreate(savedInstanceState)
     }
 
-    override fun getWebChromeClient(): WebChromeClient? {
-        return mWebChromeClient
-    }
 
     private var mWebChromeClient: WebChromeClient = object : WebChromeClient() {
         override fun onProgressChanged(view: WebView, newProgress: Int) {}
@@ -65,18 +63,19 @@ class AgentActivity : BaseAgentWebActivity() {
         mTitleTextView = toolbar_title
         mBackImageView?.visibility = View.VISIBLE
         mBackImageView?.setOnClickListener {
-            if (!mAgentWeb.back()) {
+            if (!agentWeb!!.back()) {
                 onBackPressed()
             }
         }
     }
 
+    override val getAgentWebParent: ViewGroup
+        get() = this.findViewById(R.id.root) as ViewGroup
 
-    override fun getAgentWebParent(): ViewGroup {
-        return this.findViewById(R.id.root) as ViewGroup
-    }
+    override val getWebChromeClient: WebChromeClient
+        get() = mWebChromeClient
 
-    override fun getUrl(): String? {
-        return urls
-    }
+    override val geturl: String
+        get() = urls ?: ""
+
 }

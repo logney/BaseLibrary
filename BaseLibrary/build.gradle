@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
-        versionName "0.0.1"
+        versionCode 3
+        versionName "0.0.3"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
@@ -29,7 +29,9 @@ android {
         }
     }
 
-
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
@@ -49,6 +51,8 @@ dependencies {
     api 'com.makeramen:roundedimageview:2.3.0'
     //权限
     api 'com.hjq:xxpermissions:5.0'
+    //定位
+    api 'com.amap.api:location:4.2.0'
     //对话框
     api 'com.afollestad.material-dialogs:core:2.0.0-alpha09'
     api 'com.afollestad.material-dialogs:files:2.0.0-alpha09'
@@ -58,8 +62,6 @@ dependencies {
     api 'com.github.castorflex.smoothprogressbar:library-circular:1.3.0'
     //Kotlin
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
-    //定位
-    api 'com.amap.api:location:4.2.0'
     api 'com.gzsm:ALoading:1.0.0'
     //tab栏
     api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
@@ -79,8 +81,6 @@ dependencies {
     api 'com.wingjay:blurimageviewlib:2.0.1'
     //mmkv
     api 'com.tencent:mmkv:1.0.10'
-    //progressroundbtn
-    api 'com.xiaochendev.progressroundbtn:library:2.0.0'
     //androidanimations
     api 'com.daimajia.easing:library:2.0@aar'
     api 'com.daimajia.androidanimations:library:2.3@aar'
@@ -104,16 +104,4 @@ allprojects {
         jcenter()
     }
 }
-apply from: '../upload.gradle'
-
-//apply plugin: 'maven'
-//
-//uploadArchives{
-//    repositories.mavenDeployer{
-//        // 配置本地仓库路径，项目根目录下的repository目录中
-//        repository(url: uri('C:/repository'))
-//        pom.groupId = "com.pengyu"// 唯一标识（通常为模块包名，也可以任意）
-//        pom.artifactId = "xlibrary" // 项目名称（通常为类库模块名称，也可以任意）
-//        pom.version = "0.0.6" // 版本号
-//    }
-//}
+apply from: '../bintrayUpload.gradle'

@@ -18,7 +18,7 @@ import com.zhouyou.http.model.HttpParams
 /**
  * Created by PengYu on 2018/1/23.
  */
-open abstract class BaseApplication : Application() {
+abstract class BaseApplication : Application() {
 
 
     companion object {
