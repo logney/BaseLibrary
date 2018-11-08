@@ -56,20 +56,21 @@ class ToastUtils {
             }
 
             val drawable = GradientDrawable()
-            drawable.setColor(sDefaultStyle!!.backgroundColor) // 设置背景色
-            drawable.cornerRadius = DimensUtils.dp2px(context1, sDefaultStyle!!.cornerRadius.toFloat()).toFloat() // 设置圆角
+            drawable.setColor(sDefaultStyle!!.getBackgroundColor()) // 设置背景色
+            drawable.cornerRadius =
+                    DimensUtils.dp2px(context1, sDefaultStyle!!.getCornerRadius().toFloat()).toFloat() // 设置圆角
 
             val textView = TextView(context1)
-            textView.setTextColor(sDefaultStyle!!.textColor)
+            textView.setTextColor(sDefaultStyle!!.getTextColor())
             textView.setTextSize(
                 TypedValue.COMPLEX_UNIT_PX,
-                DimensUtils.sp2px(context1, sDefaultStyle!!.textSize).toFloat()
+                DimensUtils.sp2px(context1, sDefaultStyle!!.getTextSize()).toFloat()
             )
             textView.setPadding(
-                DimensUtils.dp2px(context1, sDefaultStyle!!.paddingLeft.toFloat()),
-                DimensUtils.dp2px(context1, sDefaultStyle!!.paddingTop.toFloat()),
-                DimensUtils.dp2px(context1, sDefaultStyle!!.paddingRight.toFloat()),
-                DimensUtils.dp2px(context1, sDefaultStyle!!.paddingBottom.toFloat())
+                DimensUtils.dp2px(context1, sDefaultStyle!!.getPaddingLeft().toFloat()),
+                DimensUtils.dp2px(context1, sDefaultStyle!!.getPaddingTop().toFloat()),
+                DimensUtils.dp2px(context1, sDefaultStyle!!.getPaddingRight().toFloat()),
+                DimensUtils.dp2px(context1, sDefaultStyle!!.getPaddingBottom().toFloat())
             )
             textView.layoutParams =
                     ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
@@ -81,15 +82,15 @@ class ToastUtils {
             }
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                textView.z = sDefaultStyle!!.z.toFloat() // 设置 Z 轴阴影
+                textView.z = sDefaultStyle!!.getZ().toFloat() // 设置 Z 轴阴影
             }
 
-            if (sDefaultStyle!!.maxLines > 0) {
-                textView.maxLines = sDefaultStyle!!.maxLines // 设置最大显示行数
+            if (sDefaultStyle!!.getMaxLines() > 0) {
+                textView.maxLines = sDefaultStyle!!.getMaxLines() // 设置最大显示行数
             }
 
             toast = XToast(context1)
-            toast!!.setGravity(sDefaultStyle!!.gravity, sDefaultStyle!!.xOffset, sDefaultStyle!!.yOffset)
+            toast!!.setGravity(sDefaultStyle!!.getGravity(), sDefaultStyle!!.getXOffset(), sDefaultStyle!!.getYOffset())
             //        sToast.setView(textView);
             setView(context1, R.layout.toast_custom_view)
         }

@@ -40,7 +40,7 @@ class ShareByWeibo(private var context: Context?) {
         }
         if (!TextUtils.isEmpty(data.imgUrl)) {
             if (data.imgUrl!!.startsWith("http")) {
-                BitmapAsyncTask(data.imgUrl, object : BitmapAsyncTask.OnBitmapListener {
+                BitmapAsyncTask(data.imgUrl!!, object : BitmapAsyncTask.OnBitmapListener {
                     override fun onSuccess(bitmap: Bitmap) {
                         localSyncTask(bitmap)
                     }
@@ -74,7 +74,7 @@ class ShareByWeibo(private var context: Context?) {
     private fun localSyncTask(bitmap: Bitmap?) {
         object : AbstractAsyncTask<String>() {
             @Throws(Exception::class)
-            override fun doLoadData(): String? {
+            override fun doLoadData(): String {
                 val imgPath: String
                 if (null != bitmap) {
                     imgPath = ShareUtil.saveBitmapToSDCard(context, bitmap)!!
@@ -82,7 +82,7 @@ class ShareByWeibo(private var context: Context?) {
                     imgPath = ShareUtil.saveBitmapToSDCard(context, getDefaultBitmap(context))!!
                 }
                 weiboShare(imgPath)
-                return null
+                return imgPath
             }
         }.execute()
     }
@@ -92,9 +92,9 @@ class ShareByWeibo(private var context: Context?) {
         if (!TextUtils.isEmpty(datas!!.imgUrl) && !datas!!.imgUrl!!.startsWith("http")) {
             object : AbstractAsyncTask<String>() {
                 @Throws(Exception::class)
-                override fun doLoadData(): String? {
+                override fun doLoadData(): String {
                     weiboShare(datas!!.imgUrl!!)
-                    return null
+                    return datas!!.imgUrl!!
                 }
             }.execute()
         } else {
