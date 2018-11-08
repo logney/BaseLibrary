@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 4
-        versionName "0.0.4"
+        versionCode 10
+        versionName "0.1.0"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
@@ -104,4 +104,4 @@ allprojects {
         jcenter()
     }
 }
-apply from: '../bintrayUpload.gradle'
+apply from: '../upload.gradle'
