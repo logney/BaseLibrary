@@ -8,12 +8,6 @@ App常用框架封装
 # 使用 
 ![AppVeyor](https://img.shields.io/badge/release-0.1.0-0DAD78.svg?style=plastic)
 
-在project root 的 build.gradle 中添加
-<pre>
-  <code>
-    maven {url 'https://dl.bintray.com/haiol/maven'}
-  </code>
-</pre>
 在app module 的 build.gardle 中添加
 
 <pre>
